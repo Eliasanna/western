@@ -27,6 +27,10 @@ public class Brigand extends Humain {
         this.estEnPrison=true;
         System.out.println(this.nom + "- Damed, je suis fait! "+ cowboy.getNom()+", tu m'as eu!");
     }
+    @Override
+    public void quelEstTonNom(){
+        System.out.println(this.nom+" le "+ this.look);
+    }
 
     public String getLook() {
         return look;

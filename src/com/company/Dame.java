@@ -27,6 +27,16 @@ public class Dame extends Humain {
         System.out.println(this.nom + " - Regardez ma nouvelle robe "+this.couleurRobe);
     }
 
+
+    public void boir() {
+        super.boir();
+    }
+
+    @Override
+    public void quelEstTonNom(){
+        System.out.println("Miss "+this.nom+".");
+    }
+
     public String getCouleurRobe() {
         return couleurRobe;
     }

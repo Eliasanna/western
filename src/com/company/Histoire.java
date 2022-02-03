@@ -33,6 +33,16 @@ public class Histoire {
         System.out.println("Un gentil homme entre dans le bar !");
         Cowboy cowboy1= new Cowboy("Willam Strom");
         cowboy1.sePresenter();
+        cowboy1.parler("Qui etes vous donc ?");
+
+        brigand1.quelEstTonNom();
+        parole=brigand1.parler("Cette femme est la mienne!!! ce ne sont pas vos affaires!"+ cowboy1.getNom());
+        System.out.println(parole);
+
+        dame1.quelEstTonNom();
+        parole=dame1.parler("Sauvez moi " + cowboy1.getAdjectif());
+        System.out.println(parole);
+
         cowboy1.sesclame();
         cowboy1.parler(" Je vais vous sauver "+ dame1.getNom());
         cowboy1.tireSurBriand(brigand1);
