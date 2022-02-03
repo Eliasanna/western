@@ -19,13 +19,13 @@ public class Brigand extends Humain {
 
     public void captureDame (Dame dame){
         dame.setEstPrisoniere(true);
-        System.out.println("Ah ah!!" + dame.getNom()+", tu es mienne désormais !");
+        System.out.println(this.nom + "- Ah ah!! " + dame.getNom()+", tu es mienne désormais !");
         nbDamesKidnapees++;
     }
 
     public void estArrete(Cowboy cowboy){
         this.estEnPrison=true;
-        System.out.println("Damed, je suis fait! "+ cowboy.getNom()+", tu m'as eu!");
+        System.out.println(this.nom + "- Damed, je suis fait! "+ cowboy.getNom()+", tu m'as eu!");
     }
 
     public String getLook() {

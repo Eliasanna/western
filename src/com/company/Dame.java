@@ -7,24 +7,24 @@ public class Dame extends Humain {
     public Dame(String nom, String couleurRobe) {
         super(nom);
         this.couleurRobe = couleurRobe;
-        estPrisoniere =true;
+        estPrisoniere =false;
     }
 
     public void kidnapper (){
         this.estPrisoniere = false;
         //hurle
-        System.out.println("AHHHHHHHHHHHHHHH!!!!!!!!!!  AUUUU SECOUUUURT");
+        System.out.println(this.nom + " - AHHHHHHHHHHHHHHH!!!!!!!!!!  AUUUU SECOUUUURT");
     }
 
     public void libérer(Humain coboy){
         this.estPrisoniere = true;
         //hurle
-        System.out.println("Merci beacoup Mr "+coboy.nom);
+        System.out.println(this.nom + " - Merci beacoup Mr "+coboy.nom);
     }
 
     public void changeRobe(String couleur){
         this.couleurRobe=couleur;
-        System.out.println("Regarde ma nouvelle robe "+this.couleurRobe);
+        System.out.println(this.nom + " - Regardez ma nouvelle robe "+this.couleurRobe);
     }
 
     public String getCouleurRobe() {

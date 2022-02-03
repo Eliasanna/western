@@ -14,13 +14,13 @@ public class Cowboy extends Humain {
     }
 
     public void sesclame(){
-        System.out.println("Prend ça, rascal!");
+        System.out.println(this.nom + " - Prend ça, rascal!");
     }
 
     public void libereDame(Dame dame){
         this.popularite++;
-        System.out.println("Vous etes bien belle Dame ! C'était un plaisir Mselle"+ dame.getNom());
-        System.out.println("Votre robe" + dame.getCouleurRobe()+" est de toute beauté! Et vous siée à ravire!");
+        System.out.println(this.nom + " - Vous etes bien belle Dame ! C'était un plaisir Mselle "+ dame.getNom());
+        System.out.println(this.nom + " - Votre robe " + dame.getCouleurRobe()+" est de toute beauté! Et vous siée à ravire!");
     }
 
     public void tireSurBriand(Brigand brigand){

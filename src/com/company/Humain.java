@@ -13,11 +13,11 @@ public class Humain {
     }
 
     public void sePresenter(){
-        System.out.println("Bonjour, "+this.nom+". Ma boisson favorite est "+this.boisson+".");
+        System.out.println(this.nom + " - Bonjour, "+this.nom+". Ma boisson favorite est "+this.boisson+".");
     }
 
     public void boir(){
-        System.out.println("Ah !  Un bon verre de "+this.boisson+"! GLOUPS !");
+        System.out.println(this.nom + " - Ah !  Un bon verre de "+this.boisson+"! GLOUPS !");
     }
 
     public String parler(String parole){
