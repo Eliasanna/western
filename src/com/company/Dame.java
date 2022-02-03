@@ -2,22 +2,22 @@ package com.company;
 
 public class Dame extends Humain {
     private String couleurRobe;
-    private boolean estLibre;
+    private boolean estPrisoniere;
 
     public Dame(String nom, String couleurRobe) {
         super(nom);
         this.couleurRobe = couleurRobe;
-        estLibre=true;
+        estPrisoniere =true;
     }
 
     public void kidnapper (){
-        this.estLibre= false;
+        this.estPrisoniere = false;
         //hurle
         System.out.println("AHHHHHHHHHHHHHHH!!!!!!!!!!  AUUUU SECOUUUURT");
     }
 
     public void libérer(Humain coboy){
-        this.estLibre= true;
+        this.estPrisoniere = true;
         //hurle
         System.out.println("Merci beacoup Mr "+coboy.nom);
     }
@@ -31,15 +31,15 @@ public class Dame extends Humain {
         return couleurRobe;
     }
 
-    public boolean isEstLibre() {
-        return estLibre;
+    public boolean isEstPrisoniere() {
+        return estPrisoniere;
     }
 
     public void setCouleurRobe(String couleurRobe) {
         this.couleurRobe = couleurRobe;
     }
 
-    public void setEstLibre(boolean estLibre) {
-        this.estLibre = estLibre;
+    public void setEstPrisoniere(boolean estPrisoniere) {
+        this.estPrisoniere = estPrisoniere;
     }
 }
